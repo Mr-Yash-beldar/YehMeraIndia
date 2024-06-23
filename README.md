@@ -52,8 +52,8 @@ cd YehMeraIndia
 
 ## How It Works ⚙️
 
-### User Sign Up & Email Verification:
-- Users sign up for an account, receive a verification email, and must verify before proceeding.
+### User Sign Up & SignIn:
+- Users sign up for an account, and must signin proceeding.
 
 ### Tour Booking:
 - Users can browse available tours and book a trip, entering their details and completing the payment via Razorpay (test mode).
