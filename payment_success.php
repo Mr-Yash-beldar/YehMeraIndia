@@ -70,13 +70,13 @@ if (isset($_POST['razorpay_payment_id'])) {
                     $mail->isSMTP();
                     $mail->Host = 'smtp.gmail.com';
                     $mail->SMTPAuth = true;
-                    $mail->Username = 'rcpitcom2@gmail.com'; // Replace with your email
-                    $mail->Password = 'hqyo agwc ypod efgc'; // Replace with your email password
+                    $mail->Username = 'youremail'; // Replace with your email
+                    $mail->Password = 'your app pass'; // Replace with your email password
                     $mail->SMTPSecure = 'tls';
                     $mail->Port = 587;
 
                     // Recipients
-                    $mail->setFrom('rcpitcom2@gmail.com', 'Shree Hari Tours'); // Replace with your email
+                    $mail->setFrom('Your email', 'Yeh Mera India'); // Replace with your email
                     $mail->addAddress($useremail);
 
                     // Content
@@ -86,7 +86,7 @@ if (isset($_POST['razorpay_payment_id'])) {
                                       Package Name: $packageResult->PackageName<br>
                                       Booking ID: $lastInsertId<br>
                                       Payment ID: $payment_id<br>
-                                      From Date: $formattedFromDate<br><br>Thank you for choosing us.<br>Shree Hari Tours";
+                                      From Date: $formattedFromDate<br><br>Thank you for choosing us.<br>Yeh Mera India";
 
                     $mail->send();
                     $msg = "Booking confirmed and email sent successfully.";
