@@ -38,7 +38,7 @@ $total_amount_paise = $total_amount * 100;
     <form action="payment_success.php" method="POST">
         <script
             src="https://checkout.razorpay.com/v1/checkout.js"
-            data-key="rzp_test_RM318IJpdgV1QH"
+            data-key="razorpay_key_id"
             data-amount="<?php echo $total_amount_paise; ?>"
             data-currency="INR"
             data-id="<?php echo 'order_id_' . uniqid(); ?>"
